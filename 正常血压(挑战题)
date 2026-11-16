@@ -1,0 +1,12 @@
+n=int(input())
+cur=0
+best=0
+for _ in range(n):
+    a,b=map(int,input().split())
+    if 90<=a<=140 and 60<=b<=90:
+        cur=cur+1
+        if cur>best:
+            best=cur
+    else:
+        cur=0
+print(best)
